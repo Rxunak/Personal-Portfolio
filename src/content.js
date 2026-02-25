@@ -1,7 +1,7 @@
 import portrait from './assets/profileImage.png';
-import project1 from './assets/project-1.svg';
-import project2 from './assets/project-2.svg';
-import project3 from './assets/project-3.svg';
+import threatDetectImage from './assets/image.png';
+import bookmarkManager from './assets/bookmarkManager.png';
+import financeProject from './assets/Financeproject.png';
 
 const content = {
   hero: {
@@ -27,7 +27,7 @@ const content = {
       description:
         'Web app that flags harmful objects and offensive language using live webcam and chat input, with ML-powered blocking and an admin dashboard.',
       tech: ['TensorFlow', 'JavaScript', 'Node.js', 'MongoDB'],
-      image: project1,
+      image: threatDetectImage,
       live: '#',
       repo: 'https://github.com/Rxunak/ThreatDetect',
     },
@@ -36,7 +36,7 @@ const content = {
       description:
         'Full-stack bookmark manager with secure auth, protected routes, REST API, and CRUD features like pinning, archiving, and real-time UI updates.',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
-      image: project2,
+      image: bookmarkManager,
       live: '#',
       repo: 'https://github.com/Rxunak/Bookmark-Manager-app',
     },
@@ -45,7 +45,7 @@ const content = {
       description:
         'Responsive finance dashboard (in progress) tracking transactions and budgets with reusable components, structured state, and performance focus.',
       tech: ['Next.js', 'TypeScript', 'React'],
-      image: project3,
+      image: financeProject,
       live: '#',
       repo: 'https://github.com/Rxunak/personal-finance-app',
     },
@@ -62,4 +62,3 @@ const content = {
 };
 
 export default content;
-
