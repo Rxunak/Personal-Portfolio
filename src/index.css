@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Light theme (default) */
+  color-scheme: light;
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1f1f1f;
+  --text-strong: #0b0b0b;
+  --muted: #5c5c5c;
+  --accent: #4ee1a0;
+  --danger: #e44f4f;
+  --border: #e0e4ea;
+  --ring-border: rgba(15, 23, 42, 0.07);
+  --ring-inner: rgba(78, 225, 160, 0.12);
+  --max-width: 1120px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #151515;
+  --surface: #242424;
+  --text: #d9d9d9;
+  --text-strong: #ffffff;
+  --muted: #9e9e9e;
+  --accent: #4ee1a0;
+  --danger: #ff6f6f;
+  --border: #2f2f2f;
+  --ring-border: rgba(255, 255, 255, 0.05);
+  --ring-inner: rgba(78, 225, 160, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

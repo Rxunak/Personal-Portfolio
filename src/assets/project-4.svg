@@ -1,0 +1,16 @@
+<svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Project cover placeholder four</title>
+  <desc id="desc">Purple accent abstract placeholder</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#1c1521" offset="0%"/>
+      <stop stop-color="#0d0b10" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="28" fill="url(#bg4)"/>
+  <circle cx="360" cy="140" r="90" fill="#120d16" stroke="#c38bff" stroke-width="8" opacity="0.7"/>
+  <rect x="200" y="90" width="320" height="90" rx="20" fill="#c38bff" opacity="0.15"/>
+  <rect x="140" y="230" width="440" height="210" rx="32" fill="#141414" stroke="#262626" stroke-width="2"/>
+  <text x="50%" y="55%" text-anchor="middle" fill="#f7f2ff" font-family="Space Grotesk, 'Segoe UI', sans-serif" font-size="28" font-weight="700">UI Mock Placeholder</text>
+  <text x="50%" y="63%" text-anchor="middle" fill="#d9c8f1" font-family="Space Grotesk, 'Segoe UI', sans-serif" font-size="18">Replace with final UI shot</text>
+</svg>

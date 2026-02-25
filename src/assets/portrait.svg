@@ -1,0 +1,29 @@
+<svg width="480" height="640" viewBox="0 0 480 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">Simple gradient portrait placeholder graphic</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#2a2a2a" offset="0%"/>
+      <stop stop-color="#1b1b1b" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#4ee1a0" stop-opacity="0.35" offset="0%"/>
+      <stop stop-color="#4ee1a0" stop-opacity="0.05" offset="100%"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <circle cx="240" cy="270" r="165"/>
+    </clipPath>
+  </defs>
+  <rect width="480" height="640" fill="#101010"/>
+  <rect x="24" y="24" width="432" height="592" rx="28" fill="url(#bg)"/>
+  <circle cx="240" cy="270" r="185" fill="#111" stroke="#1f1f1f" stroke-width="10"/>
+  <circle cx="240" cy="270" r="205" fill="none" stroke="url(#ring)" stroke-width="8" />
+  <g clip-path="url(#clip)">
+    <rect x="60" y="90" width="360" height="360" fill="#181818"/>
+    <path d="M228 170c-54 6-92 50-92 115 0 78 53 120 113 120s113-47 113-126c0-63-33-103-86-109l-2 24c34 6 57 31 57 83 0 60-38 99-82 99s-82-35-82-95c0-48 26-80 69-84l-6-27z" fill="#2f2f2f"/>
+    <circle cx="240" cy="260" r="78" fill="#3a3a3a"/>
+    <rect x="183" y="360" width="114" height="120" rx="48" fill="#2b2b2b"/>
+    <rect x="160" y="330" width="160" height="44" rx="18" fill="#303030"/>
+  </g>
+  <text x="50%" y="92%" fill="#4ee1a0" font-size="18" font-family="Space Grotesk, 'Segoe UI', sans-serif" text-anchor="middle" letter-spacing="1">Your Portrait Here</text>
+</svg>
