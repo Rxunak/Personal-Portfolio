@@ -28,7 +28,7 @@ const content = {
         'Web app that flags harmful objects and offensive language using live webcam and chat input, with ML-powered blocking and an admin dashboard.',
       tech: ['TensorFlow', 'JavaScript', 'Node.js', 'MongoDB'],
       image: threatDetectImage,
-      live: '#',
+      live: 'https://threat-detect-iota.vercel.app',
       repo: 'https://github.com/Rxunak/ThreatDetect',
     },
     {
@@ -37,7 +37,7 @@ const content = {
         'Full-stack bookmark manager with secure auth, protected routes, REST API, and CRUD features like pinning, archiving, and real-time UI updates.',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
       image: bookmarkManager,
-      live: '#',
+      live: 'https://bookmark-manager-app-alpha.vercel.app',
       repo: 'https://github.com/Rxunak/Bookmark-Manager-app',
     },
     {
