@@ -150,16 +150,13 @@ const ContactForm = ({ email, formName = 'contact' }) => {
     event.preventDefault();
     setStatus('');
     if (!validate()) return;
-    const payload = {
-      'form-name': formName,
-      ...formData,
-    };
     try {
-      await fetch('/', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(payload).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
+      if (!response.ok) throw new Error('Failed to send message');
       setStatus('Thanks! Your message was sent.');
       setFormData(initialState);
     } catch (error) {
@@ -178,13 +175,9 @@ const ContactForm = ({ email, formName = 'contact' }) => {
       className="contact-form"
       name={formName}
       method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       noValidate
     >
-      <input type="hidden" name="form-name" value={formName} />
-      <input type="hidden" name="bot-field" />
       <label className="field">
         <span className="field__label">Name</span>
         <input

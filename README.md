@@ -39,6 +39,17 @@ That’s it—CRA builds are static, so no extra config is required. If you pref
 - Update all profile info, skills, projects, and social links in `src/content.js`.
 - Replace placeholder SVGs in `src/assets/` with your own images/screenshots (keep the filenames or update imports in `src/content.js`).
 
+## Contact form on Vercel
+This repo includes a Vercel serverless function at `api/contact.js` that sends form submissions using Resend.
+
+Set these environment variables in Vercel (`Project > Settings > Environment Variables`):
+- `RESEND_API_KEY`: your Resend API key.
+- `TO_EMAIL`: destination inbox (for this site, use `raunakuk2016@gmail.com`).
+- `FROM_EMAIL`: sender identity, for example `Portfolio Contact <no-reply@yourdomain.com>`.
+
+Notes:
+- `FROM_EMAIL` should be from a verified domain in Resend for production.
+- If `TO_EMAIL` is not set, the function defaults to `raunakuk2016@gmail.com`.
+
 ## Notes
-- The contact form currently shows client-side validation only; wire it up to your backend or a form service when ready.
 - Design colors and spacing follow the provided preview; adjust CSS tokens in `src/index.css` and `src/App.css` if your brand palette differs.
